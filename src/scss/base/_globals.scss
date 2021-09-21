@@ -23,6 +23,10 @@ p {
 }
 
 main {
-    margin: 85px 32px 78px 32px;
+    padding: 5.3125rem 2rem 4.875rem 2rem;
     text-align: center;
+
+    @include breakpoint-up(large) {
+        padding-top: 5rem;
+    }
 }

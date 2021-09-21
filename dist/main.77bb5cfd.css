@@ -1,30 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  color: #4c4e61;
-  background-color: #fafafa;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-main {
-  margin: 85px 32px 78px 32px;
-  text-align: center;
-}
-
 /* Document
    ========================================================================== */
 /**
@@ -363,24 +336,88 @@ template {
   display: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  color: #4c4e61;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  padding: 5.3125rem 2rem 4.875rem 2rem;
+  text-align: center;
+}
+@media (min-width: 64em) {
+  main {
+    padding-top: 5rem;
+  }
+}
+
 .features {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
 }
+@media (min-width: 64em) {
+  .features {
+    margin: 0 auto;
+    display: grid;
+    max-width: 69.375rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.875rem;
+    grid-template-areas: "super team calc" "super karma calc";
+  }
+}
 .features__card {
-  margin-bottom: 25px;
-  max-width: 311px;
-  box-shadow: 0 15px 30px -11px rgba(131, 167, 210, 0.5);
-  border-radius: 8px;
+  margin-bottom: 1.5625rem;
+  max-width: 19.4375rem;
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 167, 210, 0.5);
+  border-radius: 0.5rem;
   overflow: hidden;
 }
+@media (min-width: 64em) {
+  .features__card {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+}
+.features__card.card1 {
+  grid-area: super;
+}
+.features__card.card2 {
+  grid-area: team;
+}
+.features__card.card3 {
+  grid-area: karma;
+}
 .features__card.card4 {
+  grid-area: calc;
   margin-bottom: 0;
 }
 .features__cardBorder {
-  height: 3.55px;
+  height: 0.2219rem;
+}
+@media (min-width: 64em) {
+  .features__cardBorder {
+    height: 0.25rem;
+  }
 }
 .features__cardBorder.card1 {
   background-color: #45d3d3;
@@ -395,48 +432,90 @@ template {
   background-color: #549ef2;
 }
 .features__cardContainer {
-  margin: 23.45px 28px 28px 28px;
+  margin: 1.4656rem 1.75rem 1.75rem 1.75rem;
+}
+@media (min-width: 64em) {
+  .features__cardContainer {
+    margin: 1.75rem 2rem 2rem 2rem;
+  }
 }
 .features__cardTitle {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 1px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.0625rem;
+}
+@media (min-width: 64em) {
+  .features__cardTitle {
+    margin-bottom: 0.375rem;
+  }
 }
 .features__cardText {
   font-weight: 400;
-  font-size: 13px;
-  line-height: 23px;
-  letter-spacing: 0.09px;
-  margin-bottom: 33px;
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.0056rem;
+  margin-bottom: 2.0625rem;
+  color: #a3a5ae;
+}
+@media (min-width: 64em) {
+  .features__cardText {
+    margin-bottom: 2.5rem;
+  }
 }
 .features__cardImg {
   display: block;
-  height: 57px;
+  height: 3.5625rem;
   margin-left: auto;
+}
+@media (min-width: 64em) {
+  .features__cardImg {
+    height: 4rem;
+  }
 }
 
 .hero {
-  max-width: 311px;
+  max-width: 19.4375rem;
   margin: 0 auto;
-  margin-bottom: 76px;
+  margin-bottom: 4.75rem;
+}
+@media (min-width: 64em) {
+  .hero {
+    max-width: 33.75rem;
+    margin-bottom: 4rem;
+  }
 }
 .hero__tagline, .hero__title {
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.17px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0106rem;
+}
+@media (min-width: 64em) {
+  .hero__tagline, .hero__title {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    letter-spacing: 0.0156rem;
+  }
 }
 .hero__tagline {
   font-weight: 200;
+  margin-bottom: 0.0625rem;
+}
+@media (min-width: 64em) {
+  .hero__tagline {
+    margin-bottom: -0.1875rem;
+  }
 }
 .hero__title {
   font-weight: 600;
+  margin-bottom: 0.8125rem;
 }
 .hero__text {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0.1px;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0063rem;
+  color: #a3a5ae;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
