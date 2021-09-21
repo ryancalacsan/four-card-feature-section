@@ -1,0 +1,64 @@
+@use "../abstracts/" as *;
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    &__card {
+        margin-bottom: 25px;
+        max-width: 311px;
+        box-shadow: 0 15px 30px -11px hsla(213, 47%, 67%, 50%);
+        border-radius: 8px;
+        overflow: hidden;
+
+        &.card4 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__cardBorder {
+        height: 3.55px;
+
+        &.card1 {
+            background-color: $cyan;
+        }
+
+        &.card2 {
+            background-color: $red;
+        }
+
+        &.card3 {
+            background-color: $orange;
+        }
+
+        &.card4 {
+            background-color: $blue;
+        }
+    }
+
+    &__cardContainer {
+        margin: 23.45px 28px 28px 28px;
+    }
+
+    &__cardTitle {
+        font-weight: $semi-bold;
+        font-size: $font-lg;
+        line-height: 30px;
+        margin-bottom: 1px;
+    }
+
+    &__cardText {
+        font-weight: $regular;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.09px;
+        margin-bottom: 33px;
+    }
+
+    &__cardImg {
+        display: block;
+        height: 57px;
+        margin-left: auto;
+    }
+}

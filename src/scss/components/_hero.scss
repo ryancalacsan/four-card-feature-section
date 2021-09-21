@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.hero {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+
+    &__tagline,
+    &__title {
+        font-size: $font-xl;
+        line-height: 36px;
+        letter-spacing: 0.17px;
+    }
+
+    &__tagline {
+        font-weight: $extra-light;
+    }
+
+    &__title {
+        font-weight: $semi-bold;
+    }
+    &__text {
+        font-size: $font-md;
+        font-weight: $regular;
+        line-height: 25px;
+        letter-spacing: 0.1px;
+    }
+}
